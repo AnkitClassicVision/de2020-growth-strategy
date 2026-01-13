@@ -1,17 +1,20 @@
 // Downeast 20/20 - Website Interactions
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Scroll Reveal with IntersectionObserver
+  // Scroll Reveal with IntersectionObserver - Optimized for smooth scroll
   const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('revealed');
+        // Use requestAnimationFrame for smoother DOM updates during scroll
+        requestAnimationFrame(() => {
+          entry.target.classList.add('revealed');
+        });
         revealObserver.unobserve(entry.target);
       }
     });
   }, {
-    rootMargin: '50px',
-    threshold: 0.1
+    rootMargin: '100px 0px', // Trigger earlier for smoother reveals
+    threshold: 0.05 // Lower threshold for faster triggering
   });
 
   document.querySelectorAll('[data-reveal]').forEach(el => {
