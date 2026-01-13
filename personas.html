@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Target Personas | DE2020 Growth Strategy</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root { --color-indigo: #6366f1; --color-rose: #f43f5e; --color-teal: #14b8a6; --color-slate-900: #0f172a; --color-slate-950: #020617; }
+    body { margin: 0; font-family: 'Inter', sans-serif; background: var(--color-slate-950); color: #f1f5f9; }
+    .aurora-bg { position: fixed; inset: 0; overflow: hidden; z-index: -1; }
+  </style>
+
+  <link rel="preload" href="./assets/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="./assets/css/main.css"></noscript>
+</head>
+<body>
+  <div class="aurora-bg">
+    <div class="aurora-blob aurora-blob--indigo"></div>
+    <div class="aurora-blob aurora-blob--rose"></div>
+    <div class="aurora-blob aurora-blob--teal"></div>
+  </div>
+
+  <nav class="nav">
+    <div class="nav-container">
+      <div class="nav-logo">DE2020 Growth</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="executive-summary.html">Summary</a></li>
+        <li><a href="personas.html">Personas</a></li>
+        <li><a href="competitive.html">Competition</a></li>
+        <li><a href="funnels.html">Funnels</a></li>
+        <li><a href="marketing.html">Marketing</a></li>
+        <li><a href="partnerships.html">Partnerships</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero" style="min-height: 60vh;">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Target Personas</h1>
+        <p class="hero-subtitle">Five detailed customer profiles with psychographics, pain points, and lifetime value analysis for DE2020's concierge optometry practice.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Priority Matrix -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <h2>Persona Priority Matrix</h2>
+        <p>Strategic prioritization by revenue potential and acquisition difficulty</p>
+      </div>
+
+      <div class="glass-card" data-reveal>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Priority</th>
+                <th>Persona</th>
+                <th>Annual Value</th>
+                <th>LTV (10yr)</th>
+                <th>Difficulty</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="tag tag-success">1</span></td>
+                <td><strong>Suffering Sandra</strong> (Dry Eye)</td>
+                <td>$800-1,500</td>
+                <td>$12,000</td>
+                <td>Medium</td>
+              </tr>
+              <tr>
+                <td><span class="tag tag-success">2</span></td>
+                <td><strong>Concerned Paula</strong> (Family)</td>
+                <td>$600-1,000</td>
+                <td>$12,000</td>
+                <td>Medium</td>
+              </tr>
+              <tr>
+                <td><span class="tag">3</span></td>
+                <td><strong>Quality Quincy</strong> (Insurance-Frustrated)</td>
+                <td>$300-500</td>
+                <td>$6,000</td>
+                <td>Low</td>
+              </tr>
+              <tr>
+                <td><span class="tag">4</span></td>
+                <td><strong>Busy Brian</strong> (Professional)</td>
+                <td>$400-600</td>
+                <td>$4,500</td>
+                <td>Medium</td>
+              </tr>
+              <tr>
+                <td><span class="tag">5</span></td>
+                <td><strong>Contact Connie</strong> (Active Lifestyle)</td>
+                <td>$350-500</td>
+                <td>$6,375</td>
+                <td>Medium-High</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Persona 1: Sandra -->
+  <section class="section" id="sandra">
+    <div class="container">
+      <div class="cards-grid cards-grid-2" data-reveal>
+        <div class="glass-card">
+          <span class="tag tag-success mb-md">Primary - Highest LTV</span>
+          <h2 style="margin-bottom: 0.5rem;">"Suffering Sandra"</h2>
+          <p class="text-muted mb-lg">The Dry Eye Patient</p>
+
+          <h4>Demographics</h4>
+          <div class="table-container mb-lg">
+            <table>
+              <tbody>
+                <tr><td>Age</td><td>45-65</td></tr>
+                <tr><td>Gender</td><td>Female (more common in women)</td></tr>
+                <tr><td>Income</td><td>$60,000-100,000</td></tr>
+                <tr><td>Location</td><td>Within 45-minute drive</td></tr>
+                <tr><td>Occupation</td><td>Professional, remote worker, retiree</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4>Eye Care Needs</h4>
+          <ul class="feature-list">
+            <li>
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg>
+              Advanced dry eye diagnosis and treatment
+            </li>
+            <li>
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg>
+              IPL, thermal pulsation treatments
+            </li>
+            <li>
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg>
+              Meibomian gland evaluation
+            </li>
+            <li>
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg>
+              Ongoing dry eye management
+            </li>
+          </ul>
+        </div>
+
+        <div class="glass-card">
+          <h4>Psychographics</h4>
+          <ul class="feature-list mb-lg">
+            <li>
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              Dealing with symptoms for years
+            </li>
+            <li>
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              Frustrated that drops don't work
+            </li>
+            <li>
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              Willing to travel for specialized care
+            </li>
+            <li>
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              Actively researching online
+            </li>
+          </ul>
+
+          <h4>Pain Points</h4>
+          <div class="glass-card-blur mb-md" style="padding: 1rem; font-style: italic;">
+            "I've tried every eye drop and nothing works long-term."
+          </div>
+          <div class="glass-card-blur mb-md" style="padding: 1rem; font-style: italic;">
+            "My regular eye doctor just tells me to use drops more often."
+          </div>
+          <div class="glass-card-blur" style="padding: 1rem; font-style: italic;">
+            "My eyes burn and itch every day, especially in winter."
+          </div>
+        </div>
+      </div>
+
+      <div class="glass-card mb-lg" data-reveal>
+        <h4>Messaging That Resonates</h4>
+        <div class="cards-grid cards-grid-3">
+          <div class="text-center">
+            <p class="text-muted mb-0">"Finally. Real relief for dry eyes."</p>
+          </div>
+          <div class="text-center">
+            <p class="text-muted mb-0">"Beyond drops: Advanced dry eye treatment"</p>
+          </div>
+          <div class="text-center">
+            <p class="text-muted mb-0">"Our Dry Eye Spa gets to the root cause."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Persona 2: Paula -->
+  <section class="section" id="paula">
+    <div class="container">
+      <div class="cards-grid cards-grid-2" data-reveal>
+        <div class="glass-card">
+          <span class="tag tag-success mb-md">Primary - Highest Volume</span>
+          <h2 style="margin-bottom: 0.5rem;">"Concerned Parent Paula"</h2>
+          <p class="text-muted mb-lg">The Family Eye Care Decision-Maker</p>
+
+          <h4>Demographics</h4>
+          <div class="table-container mb-lg">
+            <table>
+              <tbody>
+                <tr><td>Age</td><td>35-50</td></tr>
+                <tr><td>Gender</td><td>Female (healthcare decision-maker)</td></tr>
+                <tr><td>Income</td><td>$65,000-110,000</td></tr>
+                <tr><td>Location</td><td>Holden, surrounding school districts</td></tr>
+                <tr><td>Family</td><td>Children ages 5-18</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4>Eye Care Needs</h4>
+          <ul class="feature-list">
+            <li>
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg>
+              Pediatric eye exams
+            </li>
+            <li>
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg>
+              Myopia management (screen time concerns)
+            </li>
+            <li>
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg>
+              Family scheduling convenience
+            </li>
+            <li>
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg>
+              Quality children's frames
+            </li>
+          </ul>
+        </div>
+
+        <div class="glass-card">
+          <h4>Psychographics</h4>
+          <ul class="feature-list mb-lg">
+            <li>
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              Makes healthcare decisions for entire family
+            </li>
+            <li>
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              Concerned about children's vision and screen time
+            </li>
+            <li>
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              Prefers one practice for whole family
+            </li>
+            <li>
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              Active in local community and school groups
+            </li>
+          </ul>
+
+          <h4>Pain Points</h4>
+          <div class="glass-card-blur mb-md" style="padding: 1rem; font-style: italic;">
+            "I'm worried about all the screen time and my kids' eyes."
+          </div>
+          <div class="glass-card-blur mb-md" style="padding: 1rem; font-style: italic;">
+            "I want a doctor who will really check my children's vision."
+          </div>
+          <div class="glass-card-blur" style="padding: 1rem; font-style: italic;">
+            "I've heard myopia is getting worse in kids - is there anything we can do?"
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Persona 3: Quincy -->
+  <section class="section" id="quincy">
+    <div class="container">
+      <div class="cards-grid cards-grid-2" data-reveal>
+        <div class="glass-card">
+          <span class="tag mb-md">Secondary</span>
+          <h2 style="margin-bottom: 0.5rem;">"Quality-Focused Quincy"</h2>
+          <p class="text-muted mb-lg">The Insurance-Frustrated Patient</p>
+
+          <h4>Demographics</h4>
+          <div class="table-container mb-lg">
+            <table>
+              <tbody>
+                <tr><td>Age</td><td>55-68</td></tr>
+                <tr><td>Gender</td><td>Male or Female</td></tr>
+                <tr><td>Income</td><td>$70,000-120,000</td></tr>
+                <tr><td>Location</td><td>Holden, Brewer, surrounding towns</td></tr>
+                <tr><td>Occupation</td><td>Professional, retired, self-employed</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4>Eye Care Needs</h4>
+          <ul class="feature-list">
+            <li>
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg>
+              Comprehensive medical eye care
+            </li>
+            <li>
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg>
+              Cataract monitoring
+            </li>
+            <li>
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg>
+              Diabetic eye care
+            </li>
+            <li>
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg>
+              Glaucoma/macular degeneration screening
+            </li>
+          </ul>
+        </div>
+
+        <div class="glass-card">
+          <h4>Psychographics</h4>
+          <ul class="feature-list mb-lg">
+            <li>
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              Had bad experience with insurance-based care
+            </li>
+            <li>
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              Values thoroughness over speed
+            </li>
+            <li>
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              May have been misdiagnosed at chain practice
+            </li>
+            <li>
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              Word-of-mouth carries weight
+            </li>
+          </ul>
+
+          <h4>Pain Points</h4>
+          <div class="glass-card-blur mb-md" style="padding: 1rem; font-style: italic;">
+            "My last eye doctor spent 5 minutes with me and missed something."
+          </div>
+          <div class="glass-card-blur mb-md" style="padding: 1rem; font-style: italic;">
+            "I'm tired of being told what's covered instead of what's best for me."
+          </div>
+          <div class="glass-card-blur" style="padding: 1rem; font-style: italic;">
+            "Insurance practices are just trying to get you in and out."
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Persona 4: Brian -->
+  <section class="section" id="brian">
+    <div class="container">
+      <div class="cards-grid cards-grid-2" data-reveal>
+        <div class="glass-card">
+          <span class="tag mb-md">Secondary</span>
+          <h2 style="margin-bottom: 0.5rem;">"Busy Professional Brian"</h2>
+          <p class="text-muted mb-lg">The Time-Conscious Executive</p>
+
+          <h4>Demographics</h4>
+          <div class="table-container mb-lg">
+            <table>
+              <tbody>
+                <tr><td>Age</td><td>45-55</td></tr>
+                <tr><td>Gender</td><td>Male</td></tr>
+                <tr><td>Income</td><td>$85,000-150,000+</td></tr>
+                <tr><td>Location</td><td>Bangor metro area</td></tr>
+                <tr><td>Occupation</td><td>Business owner, manager, professional</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4>Eye Care Needs</h4>
+          <ul class="feature-list">
+            <li>
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg>
+              Progressive lenses (presbyopia)
+            </li>
+            <li>
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg>
+              Annual comprehensive exams
+            </li>
+            <li>
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg>
+              Premium lens options
+            </li>
+            <li>
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg>
+              Early dry eye symptoms (screen time)
+            </li>
+          </ul>
+        </div>
+
+        <div class="glass-card">
+          <h4>Pain Points</h4>
+          <div class="glass-card-blur mb-md" style="padding: 1rem; font-style: italic;">
+            "I don't have time to sit in a waiting room for an hour."
+          </div>
+          <div class="glass-card-blur mb-md" style="padding: 1rem; font-style: italic;">
+            "I'm paying for insurance but still wait forever and feel like a number."
+          </div>
+          <div class="glass-card-blur mb-lg" style="padding: 1rem; font-style: italic;">
+            "I'd rather pay more and actually talk to my doctor."
+          </div>
+
+          <h4>Messaging That Resonates</h4>
+          <ul class="feature-list">
+            <li>
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg>
+              "Your time is valuable. So is your vision."
+            </li>
+            <li>
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg>
+              "No insurance hassle. Just expert care."
+            </li>
+            <li>
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg>
+              "The thorough exam you deserve, on your schedule."
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Persona 5: Connie -->
+  <section class="section" id="connie">
+    <div class="container">
+      <div class="cards-grid cards-grid-2" data-reveal>
+        <div class="glass-card">
+          <span class="tag mb-md">Tertiary</span>
+          <h2 style="margin-bottom: 0.5rem;">"Contact Lens Connie"</h2>
+          <p class="text-muted mb-lg">The Active Lifestyle Patient</p>
+
+          <h4>Demographics</h4>
+          <div class="table-container mb-lg">
+            <table>
+              <tbody>
+                <tr><td>Age</td><td>28-45</td></tr>
+                <tr><td>Gender</td><td>Female or Male</td></tr>
+                <tr><td>Income</td><td>$55,000-90,000</td></tr>
+                <tr><td>Location</td><td>Bangor metro area</td></tr>
+                <tr><td>Lifestyle</td><td>Active (hiking, sports, outdoors)</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4>Eye Care Needs</h4>
+          <ul class="feature-list">
+            <li>
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg>
+              Contact lens fitting and annual exams
+            </li>
+            <li>
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg>
+              Specialty lenses (daily, toric, multifocal)
+            </li>
+            <li>
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg>
+              Backup glasses with quality frames
+            </li>
+            <li>
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg>
+              Dry eye from contact wear
+            </li>
+          </ul>
+        </div>
+
+        <div class="glass-card">
+          <h4>Pain Points</h4>
+          <div class="glass-card-blur mb-md" style="padding: 1rem; font-style: italic;">
+            "My contacts from online never fit as well as doctor-fit ones."
+          </div>
+          <div class="glass-card-blur mb-md" style="padding: 1rem; font-style: italic;">
+            "I get dry eyes from my contacts, especially at end of day."
+          </div>
+          <div class="glass-card-blur mb-lg" style="padding: 1rem; font-style: italic;">
+            "I want contacts that work for my active lifestyle."
+          </div>
+
+          <h4>Messaging That Resonates</h4>
+          <ul class="feature-list">
+            <li>
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg>
+              "Contact lenses that keep up with your life."
+            </li>
+            <li>
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg>
+              "Expert fitting for all-day comfort."
+            </li>
+            <li>
+              <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg>
+              "The difference a proper fitting makes."
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Words That Resonate -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <h2>Language Patterns</h2>
+        <p>Words and phrases that connect with target personas</p>
+      </div>
+
+      <div class="cards-grid cards-grid-2" data-reveal>
+        <div class="glass-card">
+          <h4>Words That Resonate</h4>
+          <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+            <span class="tag tag-success">Thorough</span>
+            <span class="tag tag-success">Unhurried</span>
+            <span class="tag tag-success">Personalized</span>
+            <span class="tag tag-success">Expert</span>
+            <span class="tag tag-success">Quality</span>
+            <span class="tag tag-success">Advanced</span>
+            <span class="tag tag-success">Relief</span>
+            <span class="tag tag-success">Finally</span>
+            <span class="tag tag-success">Time</span>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <h4>Words to Avoid</h4>
+          <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+            <span class="tag tag-warning">Cheap</span>
+            <span class="tag tag-warning">Fast</span>
+            <span class="tag tag-warning">Basic</span>
+            <span class="tag tag-warning">Corporate</span>
+            <span class="tag tag-warning">Chain</span>
+            <span class="tag tag-warning">Discount</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-text">
+          Downeast 20/20 Growth Strategy | Research-Backed Analysis
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="executive-summary.html">Summary</a>
+          <a href="personas.html">Personas</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script defer src="./assets/js/main.js"></script>
+</body>
+</html>
