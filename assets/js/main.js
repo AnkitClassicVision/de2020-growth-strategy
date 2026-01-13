@@ -1,6 +1,20 @@
 // Downeast 20/20 - Website Interactions
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Pause aurora animations during scroll for smoother performance
+  let scrollTimeout;
+  const body = document.body;
+
+  window.addEventListener('scroll', () => {
+    if (!body.classList.contains('is-scrolling')) {
+      body.classList.add('is-scrolling');
+    }
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(() => {
+      body.classList.remove('is-scrolling');
+    }, 150);
+  }, { passive: true });
+
   // Scroll Reveal with IntersectionObserver - Optimized for smooth scroll
   const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -30,13 +44,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Smooth scroll for anchor links
+  // Smooth scroll for anchor links (use native CSS scroll-behavior instead)
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        target.scrollIntoView({ behavior: 'smooth' });
+      const targetId = this.getAttribute('href');
+      if (targetId !== '#') {
+        e.preventDefault();
+        const target = document.querySelector(targetId);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
       }
     });
   });
